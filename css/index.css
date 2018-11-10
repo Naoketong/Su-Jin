@@ -1,0 +1,117 @@
+*{
+	margin:0 auto;
+	padding:0;
+	box-sizing:border-box;
+	/*font-weight: normal;
+  list-style: none;*/
+}
+a{
+	text-decoration: none;		
+}
+body{
+	font-family: "Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+
+.loader{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 3px;
+	z-index: 100;
+	background-image: -webkit-linear-gradient(left, #F16F5C 0%, #F16F5C 12.5%, #5B56DD 12.5%, #5B56DD 25%, #E15CED 25%, #E15CED 37.5%, #27E559 37.5%, #27E559 50%, #18C8C9 50%, #18C8C9 62.5%, #DC8987 62.5%, #DC8987 75%, #BB83D6 75%, #BB83D6 87.5%, #E774BD 87.5%, #E774BD 100%);
+}
+.contanter{
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 100px;
+}
+.contanter:before{
+	content: '';
+	display: block;
+	width: 1px;
+	height: 200%;
+	background-color: #eaeaea;
+	position: absolute;
+	left: 50%;
+	/*top: -50%;*/
+	z-index: 0;
+}
+.banner-section{
+	position: relative;
+}
+.banner-content{
+	height: 937px;
+	position: relative;
+	transform: translate3d(0px, 0px, 0px);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  background-image: url(../img/banner-01.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+/*.banner-img{
+	width: 100%;
+	height: 100%;
+	
+}*/
+.banner-sanjiaoxin{
+	position: absolute;
+	z-index: 11;
+  top: -197px;
+  left: -780px;
+  width: 80%;
+  height: 200%;
+  background-color: rgb(9, 69, 132,.8);
+  transform: rotate(-41deg); 
+}
+.banner-logo{
+	font-family: 'icomoon';
+	display: inline-block;
+	position: absolute;
+	top: 67px;
+	left: 55px;
+	font-size: 26px;
+	line-height: 26px;
+	color: #fff;
+	z-index: 12;
+}
+.banner-icon-menu{
+	width: 32px;
+	height: 32px;
+	font-size: 20px;
+  padding: 6px 6px 5px;
+  border-radius: 2px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 12;
+  right: 55px;
+  top: 67px;
+  margin-top: -3px;
+  background: rgba(255,255,255,.9);
+}
+.banner-icon-menu:before{
+
+}
+.banner-text{
+	position: absolute;
+	width: 28%;
+  top: 30%;
+  left: 10%;
+  z-index: 12;
+}
+.banner-text p:nth-child(1){
+	font-size: 12px;
+	color: #fff;
+	margin-bottom: 15px;
+}
+.banner-text p:last-child{
+	font-size: 14px;
+	color: #fff;
+	margin-top: 30px;
+}
+.banner-text .posttitle{
+	font-size: 28px;
+	
+	color: #fff;
+}
