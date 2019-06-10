@@ -2,8 +2,6 @@
 	margin:0 auto;
 	padding:0;
 	box-sizing:border-box;
-	/*font-weight: normal;
-  list-style: none;*/
 }
 a{
 	text-decoration: none;		
@@ -11,7 +9,6 @@ a{
 body{
 	font-family: "Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
 }
-
 .loader{
 	position: fixed;
 	top: 0;
@@ -33,7 +30,6 @@ body{
 	background-color: #eaeaea;
 	position: absolute;
 	left: 50%;
-	/*top: -50%;*/
 	z-index: 0;
 }
 .banner-section{
@@ -50,11 +46,6 @@ body{
 	background-position: center;
 	overflow: hidden;
 }
-/*.banner-img{
-	width: 100%;
-	height: 100%;
-	
-}*/
 .banner-sanjiaoxin{
 	position: absolute;
 	z-index: 11;
@@ -90,9 +81,6 @@ body{
   margin-top: -3px;
   background: rgba(255,255,255,.9);
 }
-.banner-icon-menu:before{
-
-}
 .banner-text{
 	position: absolute;
 	width: 28%;
@@ -112,6 +100,86 @@ body{
 }
 .banner-text .posttitle{
 	font-size: 28px;
-	
+	color: #fff;
+}
+.content-item{
+	position: relative;
+	width: 1200px;
+	height: 440px;
+	margin:100px auto 0;
+}
+.item-img{
+	position: absolute;
+	width: 680px;
+  height: 440px;
+  z-index: 3;
+}
+.item-img img{
+	width: 680px;
+  height: 440px;
+}
+.content-item.step-1 .item-img{
+	left: 0;
+}
+.content-item.step-2 .item-img{
+	left: 520px;
+}
+.item-img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.item-text{
+	display: inline-block;
+	position: absolute;
+  background: #fff;
+  text-align: left;
+  top: 20px;
+  height: 398px;
+  width: 498px;
+  border: 1px solid #eaeaea;
+  z-index: 2;
+}
+.content-item.step-1 .item-text{
+	left: 660px;
+}
+.content-item.step-2 .item-text{
+	right: 660px;
+}
+.item-time{
+	color: #999;
+  font-size: 12px;
+  margin: 80px 0 0 80px;
+}
+.item-title{
+	font-size: 30px;
+  line-height: 1.1em;
+  font-weight: 500;
+  margin: 10px 100px 0 80px;
+}
+.item-title a{
+	color: #333;
+}
+.item-content{
+	color: #555;
+  margin: 10px 100px 0 80px;
+  font-size: 14px;
+  line-height: 1.8em;
+}
+.pager-section{
+	text-align: center;
+  margin: 70px 0 0;
+  position: relative;
+}
+.pager-button{
+	font-size: 14px;
+  letter-spacing: 5px;
+  color: #666;
+  border: 1px solid #dadada;
+  padding: 10px 40px;
+  background-color: #fff;
+}
+.pager-button:hover{
+	background-color: #84c1ff;
 	color: #fff;
 }
